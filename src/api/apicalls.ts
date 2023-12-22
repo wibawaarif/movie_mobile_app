@@ -1,4 +1,6 @@
-const apiKey: string = '03455417bd1dd804fe52f162947b8aa8';
+import Config from 'react-native-config';
+console.log(Config, 'test')
+const apiKey = Config.API_KEY;
 
 export const baseImagePath = (size: string, path: string) => {
   return `https://image.tmdb.org/t/p/${size}${path}`;
